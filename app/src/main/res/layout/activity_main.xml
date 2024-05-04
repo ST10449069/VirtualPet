@@ -4,13 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/imad16"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/AppName"
+    <EditText
+        android:id="@+id/etAppName"
         android:layout_width="match_parent"
         android:layout_height="119dp"
-        android:text="Welcome to Petopia "
+        android:fontFamily="@font/andika_new_basic_bold_italic"
+        android:text="Fluffy's Petopia "
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:id="@+id/etBunny"
+        android:layout_width="match_parent"
+        android:layout_height="448dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etBunny"
+        tools:srcCompat="@drawable/imad13" />
+
+    <Button
+        android:id="@+id/btnNextScreen"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:backgroundTint="@color/material_dynamic_primary80"
+        android:fontFamily="@font/andika_new_basic_bold_italic"
+        android:text="Get Started"
+        android:textColor="@color/white"
         android:textSize="34sp" />
 </LinearLayout>
